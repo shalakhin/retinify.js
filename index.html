@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Retinify.js by OShalakhin</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/OShalakhin/retinify.js">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/OShalakhin/retinify.js/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/OShalakhin/retinify.js/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Retinify.js</h1>
+          <p>dead simple function to retinify only necessary images</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/OShalakhin">OShalakhin</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="retinifyjs" class="anchor" href="#retinifyjs"><span class="octicon octicon-link"></span></a>Retinify.js</h1>
+
+<p><strong>version: 0.1</strong></p>
+
+<h2>
+<a name="why" class="anchor" href="#why"><span class="octicon octicon-link"></span></a>Why?</h2>
+
+<p>I tried retina.js and jquery.retina and found it doesn't suit my purposes.
+First doesn't work and seems to have some bug and the second doesn't work
+as it tries to check if the image exists on the server and in my case static
+was served by Rackspace Cloudfiles which doesn't allow custom SSL and CORS is
+another problem to simply use what is already done.</p>
+
+<p>As I don't need some extra functionality and <strong>all we need is just use <a href="https://github.com/2x" class="user-mention">@2x</a>
+images where we know they exist</strong> I wrote very very small function to do it.
+Now kitten don't cry and I share it with you if you if you find it useful for
+your projects too.</p>
+
+<h2>
+<a name="docs" class="anchor" href="#docs"><span class="octicon octicon-link"></span></a>Docs</h2>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"/path/to/retinify.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<p>Script just looks for img elements in DOM with <code>data-retina</code> not empty. Then it
+replaces image src with data-retina. That's it. Simple and works.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
