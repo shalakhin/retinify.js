@@ -1,6 +1,6 @@
 # Retinify.js
 
-**version: 0.1**
+**version: 0.1.1**
 
 ## Why?
 

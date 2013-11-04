@@ -3,7 +3,7 @@
   $(function() {
     var retinaImages;
     if (window.devicePixelRatio >= 2) {
-      retinaImages = $('img[data-retina!=""]');
+      retinaImages = $('img[data-retina]');
       return retinaImages.each(function(i) {
         return retinaImages[i].src = $(retinaImages[i]).data('retina');
       });
